@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Search Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        h1 {
+            font-family: "Product Sans", Arial, sans-serif;
+            font-size: 80px;
+            font-weight: normal;
+            color: #4285F4;
+        }
+
+        .search-container {
+            margin-top: 50px;
+        }
+
+        .search-bar {
+            display: inline-block;
+            width: 50%;
+            padding: 15px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+            background-color: white;
+        }
+
+        .search-bar input[type="text"] {
+            width: 90%;
+            border: none;
+            outline: none;
+            font-size: 18px;
+        }
+
+        .search-bar input[type="text"]::placeholder {
+            font-size: 18px;
+            color: #808080;
+        }
+
+        .search-bar button {
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            font-size: 18px;
+            color: #4285F4;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 14px;
+            border: 1px solid #dfe1e5;
+            background-color: #f8f9fa;
+            color: #3c4043;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .buttons button:hover {
+            background-color: #f1f3f4;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #70757a;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Yasin</h1>
+
+    <div class="search-container">
+        <form action="https://en.wikipedia.org/wiki/Special:Search" method="get" class="search-bar" target="_blank">
+            <input type="text" name="search" placeholder="Search Wikipedia">
+            <button type="submit">🔍</button>
+        </form>
+
+        <div class="buttons">
+            <button onclick="document.querySelector('form').submit()">Wikipedia Search</button>
+            <button onclick="window.location.href='https://www.wikipedia.org/'">Go to Wikipedia</button>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Yasin Search Engine
+    </footer>
+
+</body>
+</html>
